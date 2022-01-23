@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="main.css">
+   <title>Text Editor</title>
+</head>
+<body>
+   
+   <div class="container">
+      <div class="controls">
+         <select name="font" id="font-face">
+            <option value="Arial">Chose Font Face</option>
+            <option value="Poppins">Poppins</option>
+            <option value="Montserrat">Montserrat</option>
+            <option value="Ubuntu">Ubuntu</option>
+         </select>
+         <div class="font-style">
+            <button id="bold">B</button>
+            <button id="italic">I</button>
+            <button id="underline">U</button>
+         </div>
+         <div class="color font-color"><label for="color">Color</label><input type='color' id="color"></div>
+         <div class="color bg-color"><label for="bg-color">BG Color</label><input type="color" id="bg-color"></div>
+         <div class="font-size">
+            <button id="decrease">-</button>
+            <span class="current-size">16</span>
+            <button id="increase">+</button>
+         </div>
+      </div>
+      <div class="text-wrapper">
+         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam perferendis modi animi, beatae iusto mollitia vitae explicabo aliquid quisquam, enim quo, officiis repellat quod cumque architecto neque numquam sit doloribus.</p>
+      </div>
+   </div>
+
+   <script src="app.js"></script>
+</body>
+</html>
